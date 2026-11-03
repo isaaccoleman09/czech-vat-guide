@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numer VAT w Czechach (DIČ) – jak zweryfikować</title>
+    <meta name="description" content="Kompleksowy poradnik: jak sprawdzić czeski numer DIČ w systemie VIES, czym różni się od IČO oraz jak bezpiecznie rozliczać transakcje transgraniczne WDT z Czechami.">
+    <link rel="canonical" href="https://viesvat.com/kraje-ue/cz/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b1120;
+            --card-bg: #1e293b;
+            --text-color: #f1f5f9;
+            --text-muted: #94a3b8;
+            --primary: #38bdf8;
+            --accent: #818cf8;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.75;
+            padding: 2.5rem 1.25rem;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        h1 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 1.25rem;
+            line-height: 1.25;
+            letter-spacing: -0.5px;
+        }
+        h2 {
+            font-size: 1.35rem;
+            color: var(--primary);
+            margin: 1.75rem 0 0.75rem;
+        }
+        h3 {
+            font-size: 1.1rem;
+            color: #e2e8f0;
+            margin: 1.25rem 0 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+            font-size: 1rem;
+        }
+        ul {
+            margin: 0.75rem 0 1.25rem 1.5rem;
+            color: #cbd5e1;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            word-break: break-all;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: #7dd3fc;
+        }
+        .box-info {
+            background: rgba(56, 189, 248, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 1rem 1.25rem;
+            border-radius: 6px;
+            margin: 1.25rem 0;
+            font-size: 0.95rem;
+        }
+        footer {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Numer VAT w Czechach (DIČ) – jak zweryfikować</h1>
+    </header>
+
+    <main>
+        <p>Wymiana handlowa z Republiką Czeską to dla polskich firm jeden z najbardziej naturalnych kierunków ekspansji gospodarczej. Bliskość geograficzna i swoboda przepływu towarów w ramach Unii Europejskiej sprzyjają transakcjom wewnątrzwspólnotowym. Jednak stosowanie preferencyjnej stawki 0% VAT przy Wewnątrzwspólnotowej Dostawie Towarów (WDT) wymaga bezwzględnej weryfikacji tożsamości podatkowej czeskiego partnera biznesowego.</p>
+
+        <h2>Format numeru DIČ w Czechach</h2>
+        <p>Czeskim odpowiednikiem polskiego NIP-u jest <strong>DIČ (Daňové identifikační číslo)</strong>. Podatnicy zarejestrowani do transakcji unijnych posługują się identyfikatorem z dwuliterowym prefiksem <strong>CZ</strong>. Struktura numeru zależy od formy prawnej podmiotu:</p>
+        <ul>
+            <li><strong>Osoby prawne (spółki):</strong> Prefiks CZ oraz 8 cyfr (najczęściej tożsamych z bazowym numerem rejestrowym IČO).</li>
+            <li><strong>Osoby fizyczne prowadzące działalność:</strong> Prefiks CZ oraz 9 lub 10 cyfr (zazwyczaj opartych na numerze PESEL – tzw. <em>rodné číslo</em>).</li>
+            <li><strong>Podmioty o strukturze szczególnej:</strong> Prefiks CZ oraz 9 cyfr.</li>
+        </ul>
+        <p>Warto pamiętać, że czeski numer statystyczny <strong>IČO (Identifikační číslo osoby)</strong> to numer czysto ewidencyjny (odpowiednik REGON). Sam numer IČO nie uprawnia do rozliczeń wewnątrzwspólnotowych bez formalnej rejestracji do DIČ.</p>
+
+        <h2>Sprawdzenie w VIES</h2>
+        <p>Przed wystawieniem faktury ze stawką 0% VAT polski przedsiębiorca ma ustawowy obowiązek zweryfikować, czy czeski kontrahent posiada aktywny status w unijnej bazie VIES. Zgodnie z dyrektywą <em>Quick Fixes</em>, posiadanie ważnego numeru VAT-UE przez nabywcę stanowi bezwzględny warunek materialnoprawny zastosowania zerowej stawki podatku.</p>
+        <p>Oficjalne dane rejestrowe, formaty oraz procedury walidacji dostępne są bezpośrednio pod adresem: <a href="https://viesvat.com/kraje-ue/cz/">https://viesvat.com/kraje-ue/cz/</a>. Weryfikacja generuje unikalny token zapytania z datą i godziną, który stanowi niepodważalny dowód dochowania należytej staranności przed kontrolą skarbową.</p>
+
+        <h2>Typowe problemy przy weryfikacji czeskiego VAT</h2>
+        <p>Podczas współpracy z czeskimi podmiotami najczęściej występują trzy bariery formalne:</p>
+        <ul>
+            <li><strong>Podatnik identyfikowany (Identifikovaná osoba):</strong> Część czeskich przedsiębiorców rejestruje się wyłącznie do importu usług z UE, nie posiadając pełnego statusu podatnika VAT w Czechach. Taki numer wymaga ostrożnej klasyfikacji transakcji.</li>
+            <li><strong>Niewiarygodny podatnik (Nespolehlivý plátce):</strong> Czeski urząd skarbowy publikuje publiczny rejestr podmiotów naruszających obowiązki podatkowe. Transakcje z takim podmiotem mogą rodzić solidarną odpowiedzialność za podatek.</li>
+            <li><strong>Brak wpisu w VIES mimo rejestracji krajowej:</strong> Zgłoszenie czeskiego podatnika do systemu unijnego bywa opóźnione w rejestrze centralnym o kilka dni roboczych.</li>
+        </ul>
+
+        <h2>FAQ – Najczęściej zadawane pytania</h2>
+        <p><strong>Czy mogę wystawić fakturę 0% VAT, mając tylko czeski numer IČO?</strong><br>
+        Nie. Do zastosowania stawki 0% VAT niezbędny jest numer DIČ z prefiksem CZ potwierdzony w bazie VIES.</p>
+
+        <p><strong>Jaka jest podstawowa stawka VAT (DPH) w Czechach?</strong><br>
+        Podstawowa stawka podatku od towarów i usług w Czechach wynosi 21%, natomiast stawka obniżona to 12%.</p>
+
+        <p><strong>Gdzie znaleźć dodatkowe informacje o unijnych procedurach?</strong><br>
+        Kompleksowe przewodniki po transakcjach transgranicznych i weryfikacji celnej znajdziesz również w międzynarodowym serwisie <a href="https://lanjeffer.pages.dev/">VIES VAT Guide</a>.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ViesVat Compliance Resource. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</div>
+
+</body>
+</html>
